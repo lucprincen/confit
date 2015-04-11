@@ -1,0 +1,21 @@
+{
+    "name": "chefduweb/mullet-theme",
+    "description": "Mullet theme.",
+    "keywords": ["javascript", "framework", "WordPress", "theme"],
+    "license": "GPL-2.0+",
+    "authors":[
+        {
+            "name": "Luc Princen",
+            "email": "luc@chefduweb.nl",
+            "homepage": "http://www.chefduweb.nl/"
+        }
+    ],
+    "type": "wordpress-theme",
+    "require": {
+        "php": ">=5.4",
+        "composer/installers" : "~1.0"
+    },
+    "require-dev":{
+        "php": ">=5.4"
+    }
+}

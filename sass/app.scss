@@ -1,0 +1,38 @@
+/**
+* Main CSS file 
+* this is where all your imports go.
+* 
+*/
+
+//Bourbon, Neat and other dependancies:
+@import 'bourbon';
+@import 'neat';
+@import 'libs/_normalize';
+@import 'libs/_cuisine';
+
+//Custom mixins and variables:
+@import '_mixins';
+@import '_variables';
+
+
+// General styling:
+@import 'layout/_general';
+@import 'layout/_header';
+@import 'layout/_footer';
+@import 'layout/_ui';
+@import 'layout/_forms';
+@import 'layout/_textual';
+
+
+// Template-level:
+@import 'pages/_page';
+@import 'pages/_blog';
+@import 'pages/_home';
+
+
+
+//Responsive:
+@import 'responsive/_general';
+@import 'responsive/_page';
+@import 'responsive/_blog';
+@import 'responsive/_home';

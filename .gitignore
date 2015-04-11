@@ -1,0 +1,12 @@
+# Miscellaneous
+.DS_Store
+Thumbs.db
+.idea/
+node_modules
+.sass_cache
+
+
+# Theme
+vendor/
+.DS_Store
+composer.lock
