@@ -1,7 +1,7 @@
 Mullet - Theme
 ===========================
 
-Mullet is a modern WordPress theme running almost completely on javascript. It uses [Backbone](http://backbonejs.org/), [Handlebars for templating](http://handlebarsjs.com/) and [the WP JS API](https://github.com/WP-API/client-js) which requires the WordPress JSON Api.
+Mullet is a modern WordPress theme running almost completely on javascript. It uses [Backbone for structure](http://backbonejs.org/), [Handlebars for templating](http://handlebarsjs.com/) and [the WP JS API](https://github.com/WP-API/client-js) which requires the WordPress JSON Api.
 
 ---
 
@@ -9,7 +9,7 @@ Mullet is a modern WordPress theme running almost completely on javascript. It u
 
 The theme was created by [Luc Princen](http://www.chefduweb.nl), who continues to lead the development.
 
-### Contributing to Cuisine
+### Contributing to Mullet
 
 All issues and pull requests should be filled on the [chefduweb/mullet](https://github.com/chefduweb/mullet/issues) repository.
 
