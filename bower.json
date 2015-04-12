@@ -2,8 +2,7 @@
   "name": "Confiture",
   "homepage": "https://github.com/chefduweb/confit",
   "authors": [
-    "Luc Princen <luc@chefduweb.nl>",
-    "Ben Word <ben@benword.com> (thanks to)"
+    "Luc Princen <luc@chefduweb.nl>"
   ],
   "license": "MIT",
   "private": false,

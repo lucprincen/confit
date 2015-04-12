@@ -1,24 +1,5 @@
 <?php
 
-	/**
-	 * Sets config and starts the theme
-	 *
-	 * @access public
-	 * @return void
-	 */
-    function confitStartApp(){
-
-    	//include the default layout    	
-        $prefix = 'templates/layouts/';
-        $prefix = apply_filters( 'confit_layouts_folder', $prefix );
-
-        $layout = apply_filters( 'confit_default_layout', 'main' );
-
-        get_template_part( $prefix.$layout );
-        
-    }
-
-    
 
     /**
      * Include all template files

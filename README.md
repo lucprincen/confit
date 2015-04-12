@@ -50,7 +50,7 @@ After installing all dependencies we need to change two files, for everything to
 
 The theme was created by [Luc Princen](http://www.chefduweb.nl), who continues to lead the development.
 
-### Contributing to Confit
+### Contributing to Confiture
 
 All issues and pull requests should be filled on the [chefduweb/confit](https://github.com/chefduweb/confit/issues) repository.
 
