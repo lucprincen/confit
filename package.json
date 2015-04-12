@@ -1,9 +1,9 @@
 {
   "name": "Confiture",
   "version": "1.0.0",
+  "appUrl": "{YOUR URL HERE}",
   "author": "Luc Princen <luc@chefduweb.nl>",
   "homepage": "https://github.com/chefduweb/confit",
-  "appUrl": "localhost:8888",
   "private": false,
   "repository": {
     "type": "git",

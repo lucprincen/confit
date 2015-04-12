@@ -39,7 +39,11 @@ After you have all the files you need to let NPM and bower install the other pac
 2. type `npm install` to install the workflow packages.
 3. type `bower install` to install all frontend dependencies.
 
-Now you're all set.
+After installing all dependencies we need to change two files, for everything to point to the right place. 
+
+* In `package.json`, change the `appUrl` variable to the url of your WordPress site (BrowserSync uses this variable to create proxies).
+
+* In `scripts/config.js` change the `baseUrl` for requireJS to do it's magic.
 
 
 ### Development
