@@ -25,13 +25,21 @@ Confit is a modern WordPress theme running almost completely on javascript. It u
 * [GruntJS](http://gruntjs.com/) linting and buildscripts for Javascript & CSS
 
 
-## Getting Started
+## Installing
 
 Clone the git repo - `git clone https://github.com/chefduweb/confit.git` and then rename the directory to the name of your theme or website, or install with composer:
 
 `composer require chefduweb/confit`
 
 If you install using composer, Confit will use [WPackagist](http://wpackagist.org/) to load in in the [JSON REST API](https://wordpress.org/plugins/json-rest-api/) as a dependency.
+
+After you have all the files you need to let NPM and bower install the other packages:
+
+1. navigate to the confit folder using your command line tool
+2. type `npm install` to install the workflow packages.
+3. type `bower install` to install all frontend dependencies.
+
+Now you're all set.
 
 
 ### Development
