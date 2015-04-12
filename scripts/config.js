@@ -11,4 +11,4 @@ require.config({
 });
 
 //setup the main file:
-require( ['jquery', 'underscore', 'backbone', 'main'] );
+require( ['jquery', 'underscore', 'backbone', 'handlebars', 'main'] );
