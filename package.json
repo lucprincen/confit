@@ -1,9 +1,9 @@
 {
-  "name": "Confit",
-  "version": "0.1",
+  "name": "Confiture",
+  "version": "1.0.0",
   "author": "Luc Princen <luc@chefduweb.nl>",
   "homepage": "https://github.com/chefduweb/confit",
-  "appUrl": "{YOUR URL HERE}",
+  "appUrl": "localhost:8888",
   "private": false,
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "grunt-contrib-watch": "~0.4.3",
     "grunt-contrib-cssmin":"0.4.1",
     "grunt-browser-sync":"2.0.0",
+    "grunt-bower-requirejs":"2.0.0",
     "node-bourbon": "^1.2.3",
     "node-neat": "1.3.0"
   }

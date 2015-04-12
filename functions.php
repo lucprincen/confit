@@ -1,6 +1,5 @@
 <?php
 
-
 	/**
 	 * Sets config and starts the theme
 	 *
@@ -9,11 +8,13 @@
 	 */
     function confitStartApp(){
 
-    	confitIncludes();
+    	//include the default layout    	
+        $prefix = 'templates/layouts/';
+        $prefix = apply_filters( 'confit_layouts_folder', $prefix );
 
-    	//include the default layout
-    	$layout = apply_filters( 'confit_default_layout', 'main' );
-    	confitLayout( $layout );
+        $layout = apply_filters( 'confit_default_layout', 'main' );
+
+        get_template_part( $prefix.$layout );
         
     }
 
@@ -25,31 +26,76 @@
      * @access public
      * @return void
      */
-    function confitIncludes(){
+    function confitYield(){
 
+        //auto-loads all .php files in these directories.
     	$includes = array(
-    		'views'		=> apply_filters( 'confit_views_folder', '/templates/views/' ),
-    		'elements'	=> apply_filters( 'confit_elements_folder', '/templates/elements' )
+    		'views'		=> apply_filters( 'confit_views_folder', 'templates/views' ),
+    		'elements'	=> apply_filters( 'confit_elements_folder', 'templates/elements' )
     	);
 
+        foreach( $includes as $key => $inc ){
+
+            echo '<!-- '.$key.'-->';
+            $root = trailingslashit( get_template_directory() );
+            $files = glob( $root.$inc.'/*.php' );
+
+            foreach ( $files as $file ){
+
+                require_once( $file );
+
+            }
+        }
     }
-
-
-
 
 
     /**
-     * Get a layout file
+     * Make the front-end includes a bit more readable
      *
      * @access public
-     * @param  String $template Layout name
-     * @return void
+     * @param   $type Type string
+     * @return  String url
      */
-    function confitLayout( $template ){
+    function confitUrl( $type, $echo = true ){
 
-    	$prefix = '/templates/layouts/';
-    	$prefix = apply_filters( 'confit_layouts_folder', $prefix );
+        $url = trailingslashit( get_template_directory_uri() );
 
-    	get_template_part( $prefix.$template );
+        switch( $type ){
+
+            case 'vendors':
+
+                $url .= 'scripts/vendors';
+                break;
+
+            case 'assets':
+
+                $url .= 'assets';
+                break;
+
+            case 'scripts':
+
+                $url .= 'scripts';
+                break;
+
+            case 'css':
+
+                $url .= 'assets/css';
+                break;
+
+            case 'images':
+
+                $url .= 'assets/images';
+                break;
+
+        }
+
+        if( $echo )
+            echo $url;
+
+
+        return $url;
+
     }
+
+    show_admin_bar( false );
 

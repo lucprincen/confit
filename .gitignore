@@ -4,6 +4,7 @@ Thumbs.db
 .idea/
 node_modules
 .sass_cache
+.sass-cache/
 
 
 # Theme

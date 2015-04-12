@@ -1,7 +1,7 @@
-Confit - Theme
+Confiture - Theme
 ===========================
 
-Confit is a modern WordPress theme running almost completely on javascript. It uses [Backbone](http://backbonejs.org/) for structure, [Handlebars](http://handlebarsjs.com/) for templating and uses the [JSON REST API](https://wordpress.org/plugins/json-rest-api/) which will be part of WP core very soon.
+Confiture is a modern WordPress theme running almost completely on javascript. It uses [Backbone](http://backbonejs.org/) for structure, [Handlebars](http://handlebarsjs.com/) for templating and uses the [JSON REST API](https://wordpress.org/plugins/json-rest-api/) which will be part of WP core very soon.
 
 
 ---
@@ -31,7 +31,7 @@ Clone the git repo - `git clone https://github.com/chefduweb/confit.git` and the
 
 `composer require chefduweb/confit`
 
-If you install using composer, Confit will use [WPackagist](http://wpackagist.org/) to load in in the [JSON REST API](https://wordpress.org/plugins/json-rest-api/) as a dependency.
+If you install using composer, Confiture will use [WPackagist](http://wpackagist.org/) to load in in the [JSON REST API](https://wordpress.org/plugins/json-rest-api/) as a dependency.
 
 After you have all the files you need to let NPM and bower install the other packages:
 
@@ -52,4 +52,4 @@ All issues and pull requests should be filled on the [chefduweb/confit](https://
 
 ### License
 
-The Confit Theme is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).
+The Confiture Theme is open-source software licensed under [GPL-2+ license](http://www.gnu.org/licenses/gpl-2.0.html).

@@ -1,5 +1,5 @@
 {
-  "name": "Confit",
+  "name": "Confiture",
   "homepage": "https://github.com/chefduweb/confit",
   "authors": [
     "Luc Princen <luc@chefduweb.nl>",
@@ -14,5 +14,5 @@
     "underscore": null,
     "requirejs": null,
     "handlebars": null
-  },
+  }
 }
