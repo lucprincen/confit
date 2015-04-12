@@ -33,14 +33,6 @@ module.exports = function(grunt) {
             }
         },
 
-        bowerRequirejs: {
-            all: {
-                rjsConfig: 'scripts/config.js',
-                options: {
-                    exclude: ['requirejs', 'modernizr']
-                }
-            }
-        },
 
         browserSync: {
             dev: {
@@ -75,12 +67,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.loadNpmTasks('grunt-bower-requirejs');
 
 
     // Default task(s).
-    grunt.registerTask('default', ['sass','bowerRequirejs'] );
-    grunt.registerTask('live', ['browserSync', 'bowerRequirejs', 'watch'] );
+    grunt.registerTask('default', ['sass'] );
+    grunt.registerTask('live', ['browserSync', 'watch'] );
     grunt.registerTask('build', ['sass', 'cssmin']);
     
     grunt.registerTask('minify-js', ['concat', 'uglify']);

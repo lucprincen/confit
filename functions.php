@@ -27,6 +27,35 @@
 
             }
         }
+
+        confitSetSettings();
+    }
+
+    /**
+     * Sets the global settings required by the JSON API:
+     *
+     * @access public
+     * @return void
+     */
+    function confitSetSettings(){
+
+        $plugin_url = trailingslashit( WP_PLUGIN_URL ).'/json-rest-api/wp-api';
+
+        //register the global object needed by the api & confiture:
+        $settings = array( 
+            'root'      => esc_url_raw( get_json_url() ),
+            'nonce'     => wp_create_nonce( 'wp_json' ),
+            'api'       => esc_url_raw( $plugin_url ),
+            'scripts'   => esc_url_raw( confitUrl( 'scripts', false ) ),
+            'vendors'   => esc_url_raw( confitUrl( 'vendors', false ) )
+        ); 
+
+
+        echo '<script>';
+            echo 'var Confit_Settings = '.json_encode( $settings ).';';
+            echo 'var WP_API_Settings = Confit_Settings;';
+        echo '</script>';
+
     }
 
 
@@ -68,6 +97,15 @@
                 $url .= 'assets/images';
                 break;
 
+            case 'requirejs':
+
+                $url .= 'scripts/vendors/requirejs/require.js';
+                break;
+
+            case 'config':
+
+                $url .= 'scripts/config'; //no trailing .js for the data-attr
+                break;
         }
 
         if( $echo )

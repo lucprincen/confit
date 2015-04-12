@@ -1,11 +1,14 @@
 require.config({
-    baseUrl: "{YOUR WP-CONTENT URL HERE}",	// point this to your wp-content folder
+    baseUrl: Confit_Settings.scripts,
     paths: {
-        "/plugins/json-rest-api/wp-api.js": "wp-api",
-        "/themes/confiture/base-classes": "base",
-        "/themes/confiture/models": "models",
-        "/themes/confiture/collections": "collections",
-        "/themes/confiture/views": "views",
+        jquery : 'vendors/jquery/dist/jquery',
+        underscore : 'vendors/underscore/underscore',
+        backbone : 'vendors/backbone/backbone',
+        handlebars : 'vendors/handlebars/handlebars',
+        api : Confit_Settings.api,
     },
     waitSeconds: 15
 });
+
+//setup the main file:
+require( ['jquery', 'underscore', 'backbone', 'main'] );

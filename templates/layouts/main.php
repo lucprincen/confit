@@ -34,8 +34,7 @@
 ?>
 
 <!-- script loading via requirejs -->
-<script data-main="<?php confitUrl( 'vendors' );?>scripts/main" src="<?php confitUrl( 'vendors' );?>/requirejs/require.js"></script>
-<script src="<?php confitUrl( 'scripts' );?>/config.js"></script>
+<script data-main="<?php confitUrl( 'config' );?>" src="<?php confitUrl( 'requirejs' );?>"></script>
 
 <!-- analytics -->
 <script>
