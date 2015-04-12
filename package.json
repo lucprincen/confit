@@ -1,13 +1,23 @@
 {
-  "name": "Mullet",
-  "version": "1.0.0",
-  "description": "Packages for the Mullet Theme",
-  "author": "Luc Princen @ Chef du Web <luc@chefduweb.nl>",
+  "name": "Confit",
+  "version": "0.1",
+  "author": "Luc Princen <luc@chefduweb.nl>",
+  "homepage": "https://github.com/chefduweb/confit",
+  "appUrl": "{YOUR URL HERE}",
   "private": false,
-  "repository" :
-      { "type" : "git"
-      , "url" : "https://github.com/chefduweb/mullet.git"
-      },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chefduweb/confit"
+  },
+  "bugs": {
+    "url": "https://github.com/chefduweb/confit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",

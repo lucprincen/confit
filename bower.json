@@ -1,0 +1,18 @@
+{
+  "name": "Confit",
+  "homepage": "https://github.com/chefduweb/confit",
+  "authors": [
+    "Luc Princen <luc@chefduweb.nl>",
+    "Ben Word <ben@benword.com> (thanks to)"
+  ],
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.2",
+    "backbone": null,
+    "underscore": null,
+    "requirejs": null,
+    "handlebars": null
+  },
+}

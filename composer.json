@@ -1,6 +1,6 @@
 {
-    "name": "chefduweb/mullet-theme",
-    "description": "Mullet theme.",
+    "name": "chefduweb/confit",
+    "description": "Confit theme.",
     "keywords": ["javascript", "framework", "WordPress", "theme"],
     "license": "GPL-2.0+",
     "authors":[
@@ -13,7 +13,8 @@
     "type": "wordpress-theme",
     "require": {
         "php": ">=5.4",
-        "composer/installers" : "~1.0"
+        "composer/installers" : "~1.0",
+        "wpackagist-plugin/json-rest-api" : "1.2.1"
     },
     "require-dev":{
         "php": ">=5.4"
