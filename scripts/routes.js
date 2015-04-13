@@ -1,5 +1,5 @@
 define([
-	'views/AppView',
+	'views/HomeView',
 	//'views/PostView',
 	//'views/PostsView',
 	//'views/PageView',
@@ -7,7 +7,7 @@ define([
 	//'models/PageModel',
 	//'collections/PostCollection',
 
-], function( AppView, PostView, PostsView, PageView, PostModel, PageModel, PostCollection ){
+], function( HomeView, PostView, PostsView, PageView, PostModel, PageModel, PostCollection ){
 
 
 
@@ -32,8 +32,8 @@ define([
 		},
 
 		home: function() {
-			var appView = new AppView();
-			appView.render();
+			var homeView = new HomeView();
+			homeView.render();
 		},
 
 		paged: function(page_id) {

@@ -1,0 +1,8 @@
+<div class="post-collection">
+	{{#each posts}}
+	<a href="{{ link }}" class="post-block">
+		<img src="{{ image.thumb.src }}" srcset="{{ image.thumb.retina }} 2x"/>
+		<strong>{{ title }}</strong>
+	</a>
+	{{/each}}
+</div>

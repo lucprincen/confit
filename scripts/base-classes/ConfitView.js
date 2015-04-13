@@ -9,7 +9,6 @@ define([
 
 	var ConfitBaseView = Backbone.View.extend({
 	
-		tagName: 'article',
 		data: {},
 		template: '',
 	
