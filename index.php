@@ -26,13 +26,13 @@
 <!-- load everything in the #yield wrapper -->
 <div class="wrapper" id="yield"></div>
 
-<?php
-    
-    //get all included template-files:
-    confitYield();
 
-    wp_footer();
+<?php 
 
+//print js vars:
+confitSetSettings();
+
+wp_footer();
 
 ?>
 

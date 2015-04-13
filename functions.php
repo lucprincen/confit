@@ -11,7 +11,8 @@
 
         //auto-loads all .php files in these directories.
     	$includes = array(
-    		'views'		=> apply_filters( 'confit_views_folder', 'templates/views' ),
+    		'layouts'   => apply_filters( 'confit_layouts_folder', 'templates/layouts' ),
+            'views'		=> apply_filters( 'confit_views_folder', 'templates/views' ),
     		'elements'	=> apply_filters( 'confit_elements_folder', 'templates/elements' )
     	);
 
@@ -27,8 +28,6 @@
 
             }
         }
-
-        confitSetSettings();
     }
 
     /**
@@ -46,6 +45,7 @@
             'root'      => esc_url_raw( get_json_url() ),
             'nonce'     => wp_create_nonce( 'wp_json' ),
             'api'       => esc_url_raw( $plugin_url ),
+            'theme'     => esc_url_raw( confitUrl( 'theme', false ) ),
             'scripts'   => esc_url_raw( confitUrl( 'scripts', false ) ),
             'vendors'   => esc_url_raw( confitUrl( 'vendors', false ) )
         ); 

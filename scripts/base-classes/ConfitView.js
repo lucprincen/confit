@@ -1,39 +1,51 @@
+define([
+	'jquery',
+	'underscore',
+	'backbone',
+	'handlebars',	
+], function( $, _, Backbone, Handlebars ){
 
-var ConfitBaseView = Backbone.View.extend({
 
-	tagName: 'article',
-	data: {},
-	template: 'main',
 
-	initialize: function(){
-		
-		var self = this;
-
-		self.data = { title: 'wop' };
-		self.put();
-
-	},
-
-	render: function(){
+	var ConfitBaseView = Backbone.View.extend({
 	
-	},
+		tagName: 'article',
+		data: {},
+		template: '',
+	
+		initialize: function(){
+			
+			var self = this;
+			self.data = { title: 'wop' };
+			
+		},
+	
+		render: function(){
+		
+			var self = this;
+			self.put();
+
+		},
+	
+	
+		make: function(){
+	
+			var self = this;
+			var view = Handlebars.compile( self.template );
+
+			return view( self.data );
+
+		},
+	
+		put: function(){
+	
+			var self = this;
+			$('#yield').html( self.make() );
+	
+		}
+	
+	});
 
 
-	make: function(){
-
-		var self = this;
-		console.log( window );
-		var template = Handlebars.compile( $( '#'+self.template ).html(), self.data );
-
-		return template;
-
-	},
-
-	put: function(){
-
-		var self = this;
-		$('#yield').html( self.make() );
-
-	}
-
+	return ConfitBaseView;
 });

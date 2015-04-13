@@ -1,9 +1,15 @@
-require( ['api', 'base-classes/ConfitView'], function(){
+define([
+	'views/AppView',
+	//'views/PostView',
+	//'views/PostsView',
+	//'views/PageView',
+	//'models/PostModel',
+	//'models/PageModel',
+	//'collections/PostCollection',
 
-//	var post = new wp.api.models.Post( { ID: 1 } );
+], function( AppView, PostView, PostsView, PageView, PostModel, PageModel, PostCollection ){
 
-//	console.log( post );	
-//	console.log( 'api calls work!' );
+
 
 	var AppRouter = Backbone.Router.extend({
 	
@@ -26,7 +32,8 @@ require( ['api', 'base-classes/ConfitView'], function(){
 		},
 
 		home: function() {
-			new ConfitBaseView();
+			var appView = new AppView();
+			appView.render();
 		},
 
 		paged: function(page_id) {
@@ -37,5 +44,7 @@ require( ['api', 'base-classes/ConfitView'], function(){
 
 	var App = new AppRouter();
 	Backbone.history.start();
+
+	return App;
 
 });

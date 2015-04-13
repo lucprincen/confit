@@ -12,6 +12,7 @@
     "backbone": null,
     "underscore": null,
     "requirejs": null,
-    "handlebars": null
+    "handlebars": null,
+    "requirejs-text": null
   }
 }

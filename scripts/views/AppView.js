@@ -1,18 +1,28 @@
-require( ['base-classes/ConfitView' ], function(){
-/*
-	var AppView = ConfitBaseView.extend(
+define([
+	'base-classes/ConfitView',
+
+	'text!../../templates/layouts/main.html',
+], function( BaseView, TemplateFile ){
+
+
+	var AppView = BaseView.extend({
 
 		tagName: 'div',
+		template: TemplateFile,
 
 		initialize: function(){
 
-		},
+			var self = this;
 
-		render: function(){
+			self.data = {
+				title: "Jaap"
+			}
+
 		}
 
 
-	)
+	});
 
-*/
+	return AppView
+
 });
