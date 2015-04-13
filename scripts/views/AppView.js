@@ -1,5 +1,5 @@
 define([
-	'text!../../templates/views/home.handlebars',
+	'text!../../templates/layouts/main.handlebars',
 
 	'base-classes/ConfitView',
 	'elements/DateView'
@@ -17,7 +17,7 @@ define([
 			var _date = new DateView().make();
 
 			self.data = {
-				title: "Hartelijk welkom!",
+				title: "Hello World!",
 				date: _date
 			}
 
